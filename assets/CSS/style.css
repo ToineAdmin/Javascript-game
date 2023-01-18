@@ -1,0 +1,92 @@
+/* ------- PAGE SETTINGS ----*/
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: chocolate;
+}
+
+.container-fluid{
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.row{
+   margin:0 auto;
+   height: 25vh;
+   background-color: whitesmoke;
+}
+
+.main{
+    position: absolute;
+    width: 88.5vw;
+    top:50px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.main1, .main2, .main3, .main4{
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.background .col, .background{
+    height: 90vh;
+}
+.background .col:first-child{
+    background-color: rgba(134, 150, 150, 0.5);
+}
+
+/*------ NEW GAME ----*/
+
+.newgame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(146, 2, 2)
+}
+
+.newgame p svg{
+    color: rgba(255, 96, 96, 0.753);
+    position: absolute;
+    left: 620px;
+    top: 85px ;
+}
+
+
+/*-------------- PLAYERS ----------- */
+
+
+.main2{
+    height: 5vh;
+}
+.main2 h2{
+    font-weight: normal;
+}
+
+
+.main3 #scorep1{
+    position: absolute;
+    font-size: 48px;
+    left: 350px;
+}
+
+.main3 #scorep2{
+    position: absolute;
+    font-size: 48px;
+    right: 350px;
+}
+
+
