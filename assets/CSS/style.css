@@ -14,7 +14,17 @@ html{
 body{
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    background-color: chocolate;
+    background-color: #fc4650;
+}
+
+button{
+    border: none;
+    background-color:rgba(250, 235, 215, 0);
+    transition: 100ms ease-in;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
 
 .container-fluid{
@@ -36,6 +46,17 @@ body{
     background-color: rgba(240, 248, 255, 0);
 }
 
+p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(146, 2, 2)
+}
+
+
+svg{
+    margin-right: 10px;
+}
+
 .main1, .main2, .main3, .main4{
     background-color: rgba(0, 0, 255, 0);
 }
@@ -43,6 +64,7 @@ body{
 .background .col, .background{
     height: 90vh;
 }
+
 .background .col:first-child{
     background-color: rgba(134, 150, 150, 0.5);
 }
@@ -53,16 +75,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: rgb(146, 2, 2)
 }
+
 
 .newgame p svg{
     color: rgba(255, 96, 96, 0.753);
-    position: absolute;
-    left: 620px;
-    top: 85px ;
 }
 
 
@@ -76,17 +93,97 @@ body{
     font-weight: normal;
 }
 
+.main3 {
+    position: relative;
+}
 
 .main3 #scorep1{
     position: absolute;
-    font-size: 48px;
-    left: 350px;
+    font-size: 64px;
+    left: 24%;
 }
 
 .main3 #scorep2{
     position: absolute;
-    font-size: 48px;
-    right: 350px;
+    font-size: 64px;
+    right:24%;
+}
+
+.main3 img{
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* --------- BOX CURRENT SCORE ------- */
+.b1{
+    position: relative;
+}
+
+.b2{
+    position: relative;
+}
+
+.box1, .box2 {
+    width: 150px;
+    height: 100px;
+    background-color: rgb(240, 57, 57);
+    border:1px solid rgba(0, 0, 0, 0.164);
+}
+
+.box1{
+    position: absolute;
+    right:25%;
+}
+
+.box2 {
+    position: absolute;
+    left:25%;
+}
+
+.main4 svg{
+    margin-bottom: 5px;
+}
+
+.main4 p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.main4 span{
+    font-size: 1.8rem;
+}
+
+
+@media(max-width:1200px){
+    .box1{
+        right:20%;
+    }
+
+    .box2{
+        left:20%
+    }
+}
+
+@media(max-width:992px){
+    .box1{
+        right:10%;
+    }
+
+    .box2{
+        left: 10%;
+    }
+}
+
+@media(max-width:520px){
+    .box1{
+        right:0;
+    }
+
+    .box2{
+        left:0;
+    }
 }
 
 
